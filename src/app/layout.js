@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Header";
 import Footer from "./components/Footer";
+import FloatingSocials from "./components/SocialMedia";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -223,7 +224,7 @@ export default function RootLayout({ children }) {
   }}
 />
         <Navbar />
-
+        <FloatingSocials/>
         <main className="flex-1">
           {children}
         </main>
