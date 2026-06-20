@@ -207,7 +207,7 @@ sm:px-10
               </Link>
 
               <Link
-                href="/treatments"
+                href="/services#our-services"
                 aria-label="View all dental treatments"
                 className="
                  w-full
@@ -249,14 +249,15 @@ justify-center
             <div
               className="
                 relative
+                
                 overflow-hidden
                 rounded-[28px]
                 border
                 border-[#43DDE122]
-              min-h-80
+              min-h-10
 sm:min-h-95
 md:min-h-0
-lg:min-h-112.5
+lg:min-h-11
                 
                 shadow-[0_20px_80px_rgba(0,0,0,.45)]
               "
@@ -290,54 +291,76 @@ lg:min-h-112.5
               />
 
               {/* Content */}
-              <div
-                className="
-                  relative
-                  z-10
-                  h-full
-                  p-6
-sm:p-8
-lg:p-10
-                  flex
-                  flex-col
-                  justify-between
-                "
-              >
-                <div
-                  className="
-                   h-14
-w-14
-sm:h-18
-sm:w-18
-                    rounded-full
-                    bg-[#43DDE122]
-                    flex
-                    items-center
-                    justify-center
-                    backdrop-blur-xl
-                  "
-                >
-                  <Stethoscope size={34} className="text-[#7DF6F9]" />
-                </div>
+              
+<div
+  className="
+    relative
+    z-10
+    h-full
+    p-5
+    sm:p-8
+    lg:p-10
+    flex
+    flex-col
+    justify-between
+  "
+>
+  {/* Icon */}
+  <div
+    className="
+      h-14
+      w-14
+      sm:h-18
+      sm:w-18
+      rounded-full
+      bg-[#43DDE122]
+      flex
+      items-center
+      justify-center
+      backdrop-blur-xl
+    "
+  >
+    <Stethoscope
+      size={34}
+      className="text-[#7DF6F9]"
+    />
+  </div>
 
-                <div>
-                  <h3 className="lg:text-left text-white font-bold leading-tight text-[32px] sm:text-4xl lg:text-5xl">
-                    16+ Dental
-                    <br className="hidden lg:block" />
-                    <span className="lg:block ">Specialties</span>
-                  </h3>
+  {/* Text Content */}
+  <div className="mt-10 sm:mt-12 lg:mt-16">
+    <h3
+  className="
+    text-white
+    font-bold
+    leading-[1.1]
 
-                  <p
-                    className="
-                      mt-4
-                      text-[#D5E7F3]
-                      text-lg
-                    "
-                  >
-                    Advanced care for every smile
-                  </p>
-                </div>
-              </div>
+    text-[32px]
+    sm:text-[40px]
+    md:text-[44px]
+    lg:text-[48px]
+
+    w-full
+    lg:max-w-[320px]
+  "
+>
+  16+ Dental Specialties
+</h3>
+    <p
+      className="
+        mt-5
+        text-[#D5E7F3]
+
+        text-base
+        sm:text-lg
+        lg:text-xl
+
+        leading-relaxed
+      "
+    >
+      Advanced care for every smile
+    </p>
+  </div>
+</div>
             </div>
           </motion.div>
         </div>

@@ -97,43 +97,49 @@ leading-[1.1]
 
         {/* Cards */}
 
-        <div
-          className="
-            mt-10
+        {/* Cards */}
 
-flex
-gap-5
+<div
+  className="
+    mt-10
 
-overflow-x-auto
-scrollbar-hide
+    flex
+    gap-5
 
-snap-x
-snap-mandatory
+    overflow-x-auto
+    overflow-y-hidden
+    overscroll-x-contain
+    scrollbar-hide
 
-md:grid
-md:grid-cols-3
-          "
-        >
-          {cards.map((card, index) => {
-            const Icon = card.icon;
+    snap-x
+    snap-mandatory
+    items-stretch
 
-            return (
-              <motion.div
-                key={card.title}
-                initial={{
-                  opacity: 0,
-                  y: 40,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                viewport={{ once: true }}
-                transition={{
-                  duration: 0.6,
-                  delay: index * 0.15,
-                }}
-               className="
+    md:grid
+    md:grid-cols-3
+  "
+  style={{ touchAction: "pan-x" }}
+>
+  {cards.map((card, index) => {
+    const Icon = card.icon;
+
+    return (
+      <motion.div
+        key={card.title}
+        initial={{
+          opacity: 0,
+          y: 15,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+        }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{
+          duration: 0.35,
+          delay: index * 0.08,
+        }}
+        className="
 group
 
 shrink-0
@@ -165,8 +171,10 @@ duration-500
 hover:-translate-y-2
 hover:border-cyan-400/20
 hover:shadow-[0_20px_60px_rgba(0,0,0,.25)]
+
+md:[transition-property:transform,border-color,box-shadow,opacity]
 "
-              >
+      >
                 {/* Icon */}
 
                 <div

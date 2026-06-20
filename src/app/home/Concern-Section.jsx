@@ -45,7 +45,7 @@ max-w-400
 px-4
 sm:px-6
 md:px-8
-lg:px-8">
+lg:px-0">
     
     {/* Heading */}
     <div className="text-center max-w-4xl mx-auto">
@@ -94,22 +94,23 @@ md:text-lg
         return (
           <motion.div
             key={item.title}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0  }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{
               duration: 0.6,
               delay: index * 0.15,
             }}
             whileHover={{
-              y: -10,
-            }}
-            className="group bg-white rounded-[30px] p-6 sm:p-7 md:p-8 lg:p-9 flex flex-col shadow-[0_20px_60px_rgba(0,0,0,0.25)]  border border-transparent hover:border-[#43DDE140] transition-all duration-500"
+  y: typeof window !== "undefined" && window.innerWidth < 768 ? -4 : -10,
+}}
+            className="group bg-white rounded-[30px] p-4 sm:p-7 md:p-8  flex flex-col shadow-[0_20px_60px_rgba(0,0,0,0.25)]  border border-transparent hover:border-[#43DDE140] 
+md:hover:-translate-y-2 transition-all duration-500"
           >
             {/* Icon */}
             <motion.div
-              whileHover={{ scale: 1.08 }}
-              className="w-16 h-16 rounded-full flex items-center justify-center"
+              whileHover={{ scale: 1.03 }}
+              className="md:w-16 md:h-16 w-12 h-12 rounded-full flex items-center justify-center"
               style={{
                 backgroundColor: item.iconBg,
               }}
@@ -132,55 +133,19 @@ md:text-lg
             </motion.div>
 
             {/* Title */}
-            <h3 className="mt-8 text-[#101828] text-[24px]
+            <h3 className="mt-6 md:mt-8 text-[#101828] text-[24px]
 sm:text-[26px]
 md:text-[28px]
-lg:text-3xl font-bold leading-tight">
+lg:text-2xl font-bold leading-tight">
               {item.title}
             </h3>
 
             {/* Description */}
-            <p className="mt-4 text-[#667085] sm:text-base text-sm lg:text-lg leading-8 grow">
+            <p className="mt-2 md:mt-4 text-[#667085] sm:text-base text-sm lg:text-lg leading-8">
               {item.description}
             </p>
 
-            {/* Button */}
-            <button
-            aria-label={`Find solution for ${item.title}`}
-type="button"
-              className="
-                mt-8 h-13
-                sm:h-14
-                rounded-xl
-                border
-                border-[#1570B8]
-                text-[#1570B8]
-                font-semibold
-                lg:text-lg
-                flex
-                items-center
-                justify-center
-                gap-2
-                transition-all
-                duration-300
-                hover:bg-[#1570B8]
-                hover:text-white
-              "
-            >
-              Find Solution
-
-              <ArrowRight
-                size={18}
-                className="
-                  opacity-0
-                  -translate-x-2
-                  group-hover:opacity-100
-                  group-hover:translate-x-0
-                  transition-all
-                  duration-300
-                "
-              />
-            </button>
+           
           </motion.div>
         );
       })}

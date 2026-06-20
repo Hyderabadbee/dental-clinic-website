@@ -2,8 +2,9 @@
 
 import { motion } from "framer-motion";
 import { Phone } from "lucide-react";
-
+import Link from "next/link";
 export default function AppointmentCTA() {
+ 
   return (
     <section 
     aria-labelledby="appointment-heading"
@@ -116,33 +117,37 @@ w-full
               "
             >
               {/* BOOK BUTTON */}
-              <motion.button
-              aria-label="Book dental appointment"
-type="button"
-                whileHover={{
-                  scale: 1.03,
-                  y: -2,
-                }}
-                whileTap={{ scale: 0.98 }}
-                className="
-                  h-14
-                  sm:h-15
-                  md:h-16
-                  px-8
-                  sm:px-10
-                  rounded-2xl
-                  bg-[#20C7D2]
-                  text-black
-                  font-bold
-                  text-sm
-                  sm:text-base
-                  md:text-lg
-                  min-w-55
-                "
-              >
-                Book Appointment
-              </motion.button>
-
+             <motion.div
+  whileHover={{
+    scale: 1.03,
+    y: -2,
+  }}
+  whileTap={{ scale: 0.98 }}
+>
+  <Link
+    href="/contact"
+    className="
+      h-14
+      sm:h-15
+      md:h-16
+      px-8
+      sm:px-10
+      rounded-2xl
+      bg-[#20C7D2]
+      text-black
+      font-bold
+      text-sm
+      sm:text-base
+      md:text-lg
+      min-w-55
+      flex
+      items-center
+      justify-center
+    "
+  >
+    Book Appointment
+  </Link>
+</motion.div>
               {/* CALL BUTTON */}
               <motion.a
               aria-label="Call WE KNOW Dental Clinic"
@@ -170,7 +175,7 @@ type="button"
                 "
               >
                 <Phone size={18} />
-                Call : +91 87905 25277
+                Call : +91 8790 5252 77
               </motion.a>
             </div>
           </div>

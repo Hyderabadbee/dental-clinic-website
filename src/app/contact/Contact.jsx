@@ -9,32 +9,41 @@ const cards = [
   {
     title: "Visit Us",
     icon: <MapPin size={28} />,
-    href: "https://maps.google.com/?q=123+Luxury+Ave+Suite+100+Beverly+Hills+CA+90210",
+    href: "https://www.google.com/maps/search/?api=1&query=H.No.1-5-71+First+Floor+Opp+Sparsha+Skin+Hospital+Godown+Road+Kamareddy+Telangana+503111",
     content: (
       <>
-        123 Luxury Ave, Suite 100
+        H.No. 1-5-71, First Floor
         <br />
-        Beverly Hills, CA 90210
+        Opp Sparsha Skin Hospital
+        <br />
+        Godown Road, Kamareddy
+        <br />
+        Telangana - 503111
       </>
     ),
   },
+
   {
     title: "Call Us",
     icon: <Phone size={28} />,
-    href: "tel:+15551234567",
+    href: "tel:+918790525277",
     content: (
       <>
-        (555) 123-4567
+<span className="font-semibold text-[#0D6A97]">
++91 8790 5252 77</span>       
+ <br />
+        Mon - Sat : 9 AM - 9 PM
         <br />
-        Mon-Fri: 8am - 6pm
+        Sunday : 9 AM - 1 PM
       </>
     ),
   },
+
   {
     title: "Email Us",
     icon: <Mail size={28} />,
-    href: "mailto:smile@weknowdental.com",
-    content: <>smile@weknowdental.com</>,
+    href: "mailto:weknowdentalclinic@gmail.com",
+    content: <>weknowdentalclinic@gmail.com</>,
   },
 ];
 
@@ -166,7 +175,7 @@ lg:text-[22px]
       </div>
 
       {/* ================= Cards ================= */}
-      <div className="relative z-10 px-4">
+      <div className="relative z-10 px-6 md:px-4">
         <div
           className="
             mx-auto
@@ -193,10 +202,10 @@ xl:grid-cols-3
     sm:min-h-60
     px-5
     sm:px-8
-    py-8
+    py-4
     sm:py-12
     lg:py-12
-    md:py-10
+    md:py-5
     text-center
     flex
     flex-col
@@ -221,7 +230,7 @@ xl:grid-cols-3
       items-center
       justify-center
       rounded-full
-      bg-[#DDE8EC]
+      bg-[#E8F7FC]
       text-[#0D6A97]
       transition-all
       duration-500
@@ -235,11 +244,11 @@ xl:grid-cols-3
 
   <h2
     className="
-      mt-8
+      lg:mt-8 mt-4
       text-[26px]
       xl:text-[32px]
       md:text-2xl
-      font-semibold
+      font-bold
       text-[#1C2127]
     "
   >
@@ -250,6 +259,7 @@ xl:grid-cols-3
     className="
       mt-4
       text-base
+      md:text-sm
       lg:text-[18px]
       leading-relaxed
       text-[#626B73]

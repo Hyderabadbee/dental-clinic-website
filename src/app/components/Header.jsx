@@ -181,11 +181,14 @@ export default function Navbar() {
                   );
                 })}
 
-                <button
+                <Link
                   href="/contact"
                   className="
                     mt-2
                     h-13
+                      flex
+    items-center
+    justify-center
                     rounded-full
                     text-black
                     font-semibold
@@ -200,7 +203,7 @@ export default function Navbar() {
                 >
                   
                   Book Appointment
-                </button>
+                </Link>
               </div>
             </motion.div>
           )}

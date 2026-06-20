@@ -19,7 +19,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://www.weknowdental.com"),
+  metadataBase: new URL("https://www.weknowdental.in"),
 
   title: {
     default: "WE KNOW Dental Clinic | Best Dental Care & Smile Solutions",
@@ -74,7 +74,7 @@ export const metadata = {
     title: "WE KNOW Dental Clinic",
     description:
       "Advanced dental care, smile makeovers, implants, braces, root canal treatments and preventive dentistry.",
-    url: "https://www.weknowdental.com",
+    url: "www.weknowdental.in",
     siteName: "WE KNOW Dental",
     images: [
       {
@@ -108,7 +108,7 @@ export const metadata = {
 },
 
   alternates: {
-    canonical: "https://www.weknowdental.com",
+    canonical: "https://www.weknowdental.in",
   },
 
   category: "Healthcare",
