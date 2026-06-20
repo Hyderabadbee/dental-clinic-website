@@ -1,13 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Frown,
-  PackageOpen,
-  Sparkles,
-  ShieldCheck,
-  Smile,
-} from "lucide-react";
+import { Frown, PackageOpen, Sparkles, ShieldCheck, Smile } from "lucide-react";
 
 const concerns = [
   {
@@ -27,11 +21,7 @@ const concerns = [
     icon: PackageOpen,
     iconBg: "bg-[#78E8EA]",
     iconColor: "text-[#006E74]",
-    items: [
-      "Dental Implants",
-      "Dentures",
-      "Crowns & Bridges",
-    ],
+    items: ["Dental Implants", "Dentures", "Crowns & Bridges"],
   },
   {
     title: "Better Smile",
@@ -62,10 +52,7 @@ const concerns = [
     icon: Smile,
     iconBg: "bg-[#8CC8FF]",
     iconColor: "text-[#0A5EA8]",
-    items: [
-      "Kids Dentistry",
-      "Preventive Care",
-    ],
+    items: ["Kids Dentistry", "Preventive Care"],
   },
 ];
 
@@ -117,14 +104,17 @@ md:text-xl
         </div>
 
         {/* Cards */}
-     <div
-  className="
+        <div
+          className="
     mt-10
     sm:mt-12
     lg:mt-16
 
     flex
+    items-stretch
     overflow-x-auto
+    overflow-y-hidden
+    overscroll-x-contain
     snap-x
     snap-mandatory
     gap-4
@@ -139,7 +129,8 @@ md:text-xl
 
     lg:overflow-visible
   "
->
+          style={{ touchAction: "pan-x" }}
+        >
           {concerns.map((concern, index) => {
             const Icon = concern.icon;
 
@@ -153,12 +144,12 @@ md:text-xl
                   duration: 0.45,
                   delay: index * 0.08,
                 }}
-              className="
+                className="
   snap-center
 
   min-w-[280px]
   sm:min-w-[320px]
-  md:min-w-[340px]
+  md:min-w-85
 
   w-[85%]
   sm:w-[75%]
@@ -181,7 +172,6 @@ md:text-xl
   hover:-translate-y-2
 "
               >
-                
                 {/* Icon */}
                 <div
                   className={`
@@ -197,10 +187,7 @@ md:text-xl
                     ${concern.iconBg}
                   `}
                 >
-                  <Icon
-                    size={24}
-                    className={concern.iconColor}
-                  />
+                  <Icon size={24} className={concern.iconColor} />
                 </div>
 
                 {/* Title */}
@@ -223,7 +210,9 @@ md:text-xl
                 </h3>
 
                 {/* Treatments */}
-<ul className="mt-5 sm:mt-6 lg:mt-8 space-y-3 sm:space-y-4 lg:space-y-5">                  {concern.items.map((item) => (
+                <ul className="mt-5 sm:mt-6 lg:mt-8 space-y-3 sm:space-y-4 lg:space-y-5">
+                  {" "}
+                  {concern.items.map((item) => (
                     <li
                       key={item}
                       className="

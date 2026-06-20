@@ -35,23 +35,23 @@ const quickLinks = [
 const treatments = [
   {
     label: "Smile Designing",
-    href: "/services/smile-designing",
+    href: "/services#our-services",
   },
   {
     label: "Dental Implants",
-    href: "/services/dental-implants",
+    href: "/services#our-services",
   },
   {
     label: "Teeth Whitening",
-    href: "/services/teeth-whitening",
+    href: "/services#our-services",
   },
   {
     label: "Root Canal",
-    href: "/services/root-canal",
+    href: "/services#our-services",
   },
   {
     label: "Aligners",
-    href: "/services/aligners",
+    href: "/services#our-services",
   },
 ];
 
@@ -201,12 +201,10 @@ lg:text-[19px]
             <h3
               className="
                 text-[#00D7E8]
-                
                 font-semibold
                text-[22px]
 sm:text-[24px]
 lg:text-[30px]
-
 mb-5
 sm:mb-6
 lg:mb-8
@@ -251,75 +249,83 @@ wrap-break-word
 </div>
 
               {/* Phone */}
-              <div className="flex gap-4 items-center">
-                <Phone
-                  size={20}
-                  className="text-[#00D7E8]"
-                />
+             <div className="flex items-start gap-4">
+  <Phone
+    size={20}
+    className="text-[#00D7E8] shrink-0 mt-1"
+  />
 
-                <a
-                  aria-label="Call WE KNOW Dental Clinic"
-                  href="tel:+918790525277"
-                  className="
-text-[#D1D5DB]
-
-text-[15px]
-sm:text-[16px]
-lg:text-[18px]
-
-hover:text-[#00D7E8]
-transition-colors
-break-all
-"
-                >
-                  +91 87905 25277
-                </a>
-              </div>
+  <a
+    href="tel:+918790525277"
+    className="
+      text-[#D1D5DB]
+      text-[15px]
+      sm:text-[16px]
+      lg:text-[18px]
+      hover:text-[#00D7E8]
+      transition-colors
+    "
+  >
++91 8790 5252 77
+  </a>
+</div>
 
               {/* Mail */}
-              <div className="flex gap-4 items-center">
-                <Mail
-                  size={20}
-                  className="text-[#00D7E8]"
-                />
+             <div className="flex items-start gap-4">
+  <Mail
+    size={20}
+    className="text-[#00D7E8] shrink-0 mt-1"
+  />
 
-                <a
-                  aria-label="Send email to WE KNOW Dental Clinic"
-                  href="mailto:weknowdentalclinic@gmail.com"
-                  className="
-text-[#D1D5DB]
-
-text-[15px]
-sm:text-[16px]
-lg:text-[18px]
-
-hover:text-[#00D7E8]
-transition-colors
-break-all
-"
-                >
-                  weknowdentalclinic@gmail.com
-                </a>
-              </div>
+  <a
+    href="mailto:weknowdentalclinic@gmail.com"
+    className="
+      text-[#D1D5DB]
+      text-[15px]
+      sm:text-[16px]
+      lg:text-[18px]
+      hover:text-[#00D7E8]
+      transition-colors
+      whitespace-nowrap
+    "
+  >
+    weknowdentalclinic@gmail.com
+  </a>
+</div>
 
               {/* Time */}
-              <div className="flex gap-4 items-center">
-                <Clock3
-                  size={20}
-                  className="text-[#00D7E8]"
-                />
+             <div className="flex  items-start gap-4 w-full">
+  <Clock3
+    size={20}
+    className="text-[#00D7E8] shrink-0 mt-1"
+  />
 
-                <span
-                  className="
-                   text-[15px]
-sm:text-[16px]
-lg:text-[18px]
+  <div className="space-y-1">
+    <p
+      className="
+        text-[#D1D5DB]
+        text-[15px]
+        sm:text-[16px]
+        lg:text-[18px]
+        whitespace-nowrap
+      "
+    >
+      Mon - Sat : 9:00 AM - 9:00 PM
+    </p>
 
-                  "
-                >
-                  Mon - Fri : 9:00 AM - 6:00 PM
-                </span>
-              </div>
+    <p
+      className="
+        text-[#D1D5DB]
+        text-[15px]
+        sm:text-[16px]
+        lg:text-[18px]
+        whitespace-nowrap
+      "
+    >
+      Sunday : 9:00 AM - 1:00 PM
+    </p>
+  </div>
+</div>
             </div>
           </motion.div>
         </div>

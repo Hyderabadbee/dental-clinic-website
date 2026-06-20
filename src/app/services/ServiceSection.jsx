@@ -173,7 +173,7 @@ const rows = [
 export default function TreatmentsSection() {
   
   return (
-    <section aria-labelledby="treatments-heading"
+    <section id="our-services" aria-labelledby="treatments-heading"
  className="relative overflow-hidden bg-[#001E30] py-20 md:py-28 xl:py-32">
       {/* Glow */}
       <div
@@ -205,12 +205,13 @@ export default function TreatmentsSection() {
       key={rowIndex}
       className="
         flex
-        gap-4
+        gap-4 
         overflow-x-auto
         snap-x
-      scroll-smooth
+      
         snap-mandatory
         scrollbar-hide
+        
       "
     >
       {row.map((item, index) => {
@@ -219,8 +220,8 @@ export default function TreatmentsSection() {
         return (
           <motion.div
             key={item.title}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0}}
+            whileInView={{ opacity: 1}}
             viewport={{ once: true }}
             transition={{
               duration: 0.4,

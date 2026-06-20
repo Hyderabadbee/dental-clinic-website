@@ -38,7 +38,7 @@ const features = [
 
 export default function ClinicIntroduction() {
   return (
-    <section className="py-20 lg:py-32 overflow-hidden">
+    <section className="py-12 lg:py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-center">
           

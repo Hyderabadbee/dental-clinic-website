@@ -265,34 +265,40 @@ hover:-translate-y-2
                   
                 "
               >
-                <div className="relative w-full">
-                  <Image
-src={item.image}
-alt={`${item.category} gallery image`}
-width={1200}
-height={800}
+              <div
+  className="
+    relative
 
-loading="lazy"
+    w-[85vw]
+    h-70
 
-sizes="
-(max-width:768px) 85vw,
-(max-width:1024px) 50vw,
-33vw
-"
+    sm:w-95
+    sm:h-80
 
-className="
-w-full
-h-full
+    md:w-full
+    md:h-auto
 
-object-cover
-
-transition-transform
-duration-700
-
-group-hover:scale-105
-"
-/>
-                </div>
+    overflow-hidden
+    rounded-3xl
+  "
+>
+  <Image
+    src={item.image}
+    alt={`${item.category} gallery image`}
+    width={1200}
+    height={800}
+    loading="lazy"
+    sizes="(max-width:768px) 85vw,(max-width:1024px) 50vw,33vw"
+    className="
+      w-full
+      h-full
+      object-cover
+      transition-transform
+      duration-700
+      group-hover:scale-105
+    "
+  />
+</div>
               </motion.div>
             ))}
           </motion.div>

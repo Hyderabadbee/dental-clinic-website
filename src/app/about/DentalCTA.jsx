@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function DentalCTA() {
   return (
     <section className="relative overflow-hidden bg-[#010A17]">
@@ -106,7 +108,8 @@ export default function DentalCTA() {
     "
   >
     {/* Primary Button */}
-    <button
+    <Link
+    href='/contact'
       className="
         h-12.5
         sm:h-13.5
@@ -115,7 +118,7 @@ export default function DentalCTA() {
         sm:px-7
 
         rounded-full
-
+flex justify-center items-center
         bg-linear-to-r
         from-[#1692D5]
         to-[#1ECAD3]
@@ -136,7 +139,7 @@ export default function DentalCTA() {
       "
     >
       Book Appointment
-    </button>
+    </Link>
 
     {/* Secondary Button */}
     <button
@@ -167,7 +170,7 @@ export default function DentalCTA() {
         hover:bg-white/5
       "
     >
-      Call : +91 87905 25277
+      Call : +91 8790 5252 77
     </button>
   </div>
 </div>
