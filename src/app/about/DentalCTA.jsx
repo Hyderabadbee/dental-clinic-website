@@ -10,8 +10,6 @@ export default function DentalCTA() {
         "radial-gradient(circle at 18% 50%, rgba(0,178,181,0.45) 0%, rgba(0,178,181,0.28) 22%, rgba(0,178,181,0.12) 40%, transparent 65%)",
     }}
   />
-
-  {/* Dark Overlay */}
   <div
     className="absolute inset-0"
     style={{
