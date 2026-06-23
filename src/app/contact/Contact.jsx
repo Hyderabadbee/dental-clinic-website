@@ -86,13 +86,8 @@ const handleSubmit = async (
 
   try {
     setLoading(true);
-
-    
-
     console.log(formData);
-
     setSuccess("Request submitted successfully!");
-
     setFormData({
       name: "",
       phone: "",
@@ -161,9 +156,9 @@ const handleSubmit = async (
               max-w-3xl
               text-white/80
               text-base
-sm:text-lg
-md:text-xl
-lg:text-[22px]
+              sm:text-lg
+              md:text-xl
+              lg:text-[22px]
               leading-relaxed
             "
           >
