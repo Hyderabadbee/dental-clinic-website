@@ -3,7 +3,6 @@ import Link from "next/link";
 export default function DentalCTA() {
   return (
     <section className="relative overflow-hidden bg-[#010A17]">
-     {/* Main Teal Glow */}
   <div
     className="absolute inset-0"
     style={{
