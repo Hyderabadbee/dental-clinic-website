@@ -82,36 +82,39 @@ xl:gap-26
 lg:grid-cols-[1.1fr_0.9fr]
           "
         >
-          {/* IMAGE */}
-{/* IMAGE */}
-<div className="mx-auto w-full lg:mx-0 hidden lg:block">
-  <div
-    className="
-      relative
-      overflow-hidden
-      rounded-[30px]
+          {/* IMAGE – full image, natural ratio, scales with the screen */}
+          <div className="mx-auto w-full lg:mx-0">
+            <div
+              className="
+                relative
+                overflow-hidden
+                rounded-[30px]
 
-      aspect-[1.15/1]
+                mx-auto
+                lg:mx-0
 
-      max-w-87.5
-      sm:max-w-125
-      md:max-w-full
+                max-w-87.5
+                sm:max-w-125
+                md:max-w-150
 
-      lg:max-w-170
-      xl:max-w-175
-      2xl:max-w-180
-    "
-  >
-    <Image
-      src="/service/whychooseus.svg"
-      alt="Experienced dental specialists providing advanced dental treatments and personalized oral care"
-      fill
-      priority
-      sizes="(max-width:768px) 100vw, (max-width:1280px) 50vw, 700px"
-      className="object-cover"
-    />
-  </div>
-</div>
+                lg:max-w-170
+                xl:max-w-175
+                2xl:max-w-180
+              "
+            >
+              {/* No fixed aspect-ratio + no object-cover => nothing gets cropped.
+                  Set width/height below to your real image size (e.g. 1200x900). */}
+              <Image
+                src="/gallery/doctor2.jpg"
+                alt="Experienced dental specialists providing advanced dental treatments and personalized oral care"
+                width={1200}
+                height={900}
+                priority
+                sizes="(max-width:640px) 350px, (max-width:768px) 500px, (max-width:1024px) 600px, (max-width:1280px) 50vw, 720px"
+                className="h-auto w-full"
+              />
+            </div>
+          </div>
 
           {/* CONTENT */}
 <div className="max-w-160

@@ -5,7 +5,7 @@ import Image from "next/image";
 const items = [
   {
     title: "Welcoming Environment",
-    image: "/home/intro.svg",
+    image: "/gallery/room.jpg",
   },
   {
     title: "Modern Treatment Spaces",

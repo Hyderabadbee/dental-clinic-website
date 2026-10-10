@@ -203,7 +203,7 @@ block
   "
 >
   <Image
-    src="/about/hero.svg"
+    src="/gallery/team.jpg"
     alt="Dental Team"
     width={1200}
     height={800}

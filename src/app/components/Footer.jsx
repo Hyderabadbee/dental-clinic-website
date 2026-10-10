@@ -223,7 +223,7 @@ lg:mb-8
 
   <a
     aria-label="Open clinic location on Google Maps"
-  href="https://www.google.com/maps/search/?api=1&query=H.No.1-5-71+First+Floor+Opp+Sparsha+Skin+Hospital+Godown+Road+Kamareddy+Telangana+503111"
+  href="https://maps.app.goo.gl/vtmiHvBcGvToUVLP6"
     target="_blank"
     rel="noopener noreferrer"
     className="
@@ -331,25 +331,32 @@ wrap-break-word
         </div>
 
         {/* Bottom Copyright */}
-        <div
-          className="
-            border-t
-            border-[#43DDE11A]
-            sm:py-6 py-5
-            text-center
-          "
-        >
-          <p
-            className="
-              text-[#8E99A3]
-              text-sm
-              md:text-base
-            "
-          >
-            Copyright © Developed by Workbees
-            Technologies Pvt Ltd
-          </p>
-        </div>
+      
+<div
+  className="
+    border-t
+    border-[#43DDE11A]
+    sm:py-6 py-5
+    text-center
+  "
+>
+  <p className="text-[#8E99A3] text-sm md:text-base">
+    Copyright © Developed by{" "}
+    <a
+      href="https://www.workbees.in/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="
+        text-[#8E99A3]
+        hover:text-[#00D7E8]
+        transition-colors
+        duration-300
+      "
+    >
+      Workbees Technologies Pvt Ltd
+    </a>
+  </p>
+</div>
       </div>
     </footer>
   );

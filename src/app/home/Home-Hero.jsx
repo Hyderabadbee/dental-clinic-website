@@ -33,7 +33,7 @@ export default function Hero() {
   }, []);
   return (
     <section className="relative overflow-hidden  md:min-h-screen flex items-center pt-22 sm:pt-25  lg:pt-20 md:pb-16">
-      <div className="mx-auto w-full px-1 sm:px-6 lg:px-10">
+      <div className="mx-auto w-full px-1 sm:px-6 lg:px-0 xl:px-1">
         <div className="grid lg:grid-cols-2 md:gap-14 xl:gap-24 items-center">
           {/* LEFT CONTENT */}
           <motion.div
@@ -216,7 +216,7 @@ w-full
               "
             >
               <Image
-                src="/home/hero.svg"
+                src="/consultation.png"
                 alt="Dental Clinic"
                 width={1000}
                 height={700}

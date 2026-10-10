@@ -9,7 +9,7 @@ const cards = [
   {
     title: "Visit Us",
     icon: <MapPin size={28} />,
-    href: "https://www.google.com/maps/search/?api=1&query=H.No.1-5-71+First+Floor+Opp+Sparsha+Skin+Hospital+Godown+Road+Kamareddy+Telangana+503111",
+    href: "https://maps.app.goo.gl/vtmiHvBcGvToUVLP6",
     content: (
       <>
         H.No. 1-5-71, First Floor

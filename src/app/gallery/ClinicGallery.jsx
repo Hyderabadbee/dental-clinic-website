@@ -8,8 +8,8 @@ const categories = [
   "All",
   "Clinic",
   "Treatments",
-  "Doctors",
-  "Patient Moments",
+  // "Doctors",
+  // "Patient Moments",
   "Team",
 ];
 
@@ -17,57 +17,92 @@ const galleryItems = [
   {
     id: 1,
     category: "Clinic",
-    image: "/gallery/c1.svg",
+    image: "/gallery/building.jpg",
   },
+  
   {
     id: 2,
     category: "Clinic",
-    image: "/gallery/c2.svg",
+    image:"/gallery/hall.jpg",
   },
-
-  {
+{
     id: 3,
-    category: "Treatments",
-    image: "/gallery/c1.svg",
+    category: "Clinic",
+    image: "/gallery/desk2.jpg",
   },
   {
     id: 4,
-    category: "Treatments",
-    image: "/gallery/c2.svg",
+    category: "Clinic",
+    image: "/gallery/room.jpg",
   },
-
   {
     id: 5,
-    category: "Doctors",
-    image: "/gallery/c1.svg",
+    category: "Treatments",
+    image: "/gallery/treatment.jpg",
   },
   {
     id: 6,
-    category: "Doctors",
-    image: "/gallery/c2.svg",
+    category: "Treatments",
+    image: "/gallery/equipment.jpg",
   },
-
+  // {
+  //   id: 7,
+  //   category: "Treatments",
+  //   image: "/gallery/equipment2.jpg",
+  // },
   {
-    id: 7,
-    category: "Patient Moments",
-    image: "/gallery/c1.svg",
+  id: 8,
+  category: "Treatments",
+  image: "/gallery/equipment3.jpg",
   },
-  {
-    id: 8,
-    category: "Patient Moments",
-    image: "/gallery/c2.svg",
-  },
-
-  {
+{
     id: 9,
-    category: "Team",
-    image: "/gallery/team.png",
+    category: "Treatments",
+  image: "/gallery/equipment4.jpg",
   },
+
+  // {
+  //   id: 5,
+  //   category: "Doctors",
+  //   image: "/gallery/c1.svg",
+  // },
+  // {
+  //   id: 6,
+  //   category: "Doctors",
+  //   image: "/gallery/c2.svg",
+  // },
+
+  // {
+  //   id: 9,
+  //   category: "Patient Moments",
+  //   image: "/gallery/c1.svg",
+  // },
   {
     id: 10,
+    category: "Patient Moments",
+    image: "/gallery/c2.svg",
+  },
+
+  {
+    id: 11,
     category: "Team",
-    image: "/gallery/team1.png",
-  }
+    image: "/gallery/welcome.JPG",
+  },
+  {
+    id: 12,
+    category: "Team",
+    image: "/gallery/team1.jpg",
+  },
+   {
+    id: 13,
+    category: "Team",
+    image: "/gallery/team2.jpg",
+  },
+  {
+    id: 14,
+    category: "Team",
+    image: "/gallery/team.jpg",
+   }
   
 ];
 
