@@ -101,7 +101,7 @@ const galleryItems = [
   {
     id: 14,
     category: "Team",
-    image: "/gallery/team.JPG",
+    image: "/gallery/team.jpg",
    }
   
 ];

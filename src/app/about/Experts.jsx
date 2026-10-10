@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -72,6 +71,7 @@ export default function MeetTheExperts() {
       </div>
 
       <div className="mx-auto w-full max-w-[1600px] px-5 sm:px-8 md:px-10 lg:px-12 2xl:px-16">
+
         {/* Section introduction */}
         <motion.div
           variants={reveal}
@@ -107,11 +107,6 @@ export default function MeetTheExperts() {
               expertise, precision, and personal care behind every confident
               smile.
             </p>
-
-            <div className="mt-4 flex items-center gap-2 text-xs font-medium tracking-wide text-[#D3E1E9] sm:text-sm">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#11C5C9]" />
-              A more thoughtful dental experience
-            </div>
           </div>
         </motion.div>
 
@@ -125,6 +120,7 @@ export default function MeetTheExperts() {
           className="relative"
         >
           <div className="grid overflow-hidden rounded-2xl border border-white/[0.09] bg-[#0A1219]/90 shadow-[0_30px_100px_rgba(0,0,0,0.32)] sm:rounded-3xl lg:grid-cols-[0.82fr_1.18fr] xl:grid-cols-[0.9fr_1.1fr]">
+
             {/* Doctor image */}
             <div className="relative min-h-0 overflow-hidden bg-[#0B1A23]">
               <div className="relative h-[310px] w-full sm:h-[420px] md:h-[470px] lg:h-full lg:min-h-[520px] xl:min-h-[560px]">
@@ -137,12 +133,11 @@ export default function MeetTheExperts() {
                   className="object-cover object-top"
                 />
 
-                {/* Image overlays */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#071016] via-[#071016]/10 to-transparent" />
 
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#0A1219]/30" />
 
-                {/* Top image label */}
+                {/* Image label */}
                 <div className="absolute left-4 top-4 flex items-center gap-2 rounded-full border border-white/15 bg-[#071016]/60 px-3 py-2 backdrop-blur-md sm:left-6 sm:top-6 sm:px-4">
                   <span className="h-1.5 w-1.5 rounded-full bg-[#11C5C9]" />
 
@@ -176,6 +171,7 @@ export default function MeetTheExperts() {
 
             {/* Doctor details */}
             <div className="flex flex-col justify-center px-5 py-8 sm:px-8 sm:py-10 md:px-10 md:py-12 lg:px-10 lg:py-12 xl:px-14 xl:py-16 2xl:px-16">
+
               <div className="flex flex-wrap items-center gap-2">
                 <span className="rounded-full border border-[#11C5C9]/25 bg-[#11C5C9]/[0.08] px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.18em] text-[#5FE1DF] sm:text-[10px]">
                   Lead Dental Surgeon
@@ -191,26 +187,10 @@ export default function MeetTheExperts() {
                 </span>
               </div>
 
-              <h3
-  className="
-    mt-6
-    text-3xl
-    font-semibold
-    leading-tight
-    tracking-[-0.04em]
-    text-white
-    sm:mt-7
-    sm:text-4xl
-    md:text-5xl
-    xl:text-6xl
-    whitespace-nowrap
-  "
->
-  Dr. Praneeth{" "}
-  <span className="text-[#11C5C9]">
-    Kumar.
-  </span>
-</h3>
+              <h3 className="mt-6 whitespace-nowrap text-3xl font-semibold leading-tight tracking-[-0.04em] text-white sm:mt-7 sm:text-4xl md:text-5xl xl:text-6xl">
+                Dr. Praneeth{" "}
+                <span className="text-[#11C5C9]">Kumar.</span>
+              </h3>
 
               <p className="mt-5 max-w-xl text-sm leading-7 text-[#A4B2BD] sm:text-base sm:leading-8">
                 With over 15 years of experience in complex restorative
@@ -219,7 +199,7 @@ export default function MeetTheExperts() {
                 approach to every patient&apos;s needs.
               </p>
 
-              {/* Expertise tags */}
+              {/* Expertise */}
               <div className="mt-7 sm:mt-8">
                 <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#728593]">
                   Areas of Expertise
@@ -237,7 +217,7 @@ export default function MeetTheExperts() {
                 </div>
               </div>
 
-              {/* Experience statistic */}
+              {/* Experience */}
               <div className="mt-8 grid grid-cols-[auto_1fr] items-center gap-4 border-t border-white/[0.09] pt-6 sm:mt-10 sm:pt-8">
                 <div className="flex h-[68px] w-[76px] flex-col items-center justify-center rounded-xl border border-[#11C5C9]/20 bg-[#11C5C9]/[0.06] sm:h-20 sm:w-24">
                   <span className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
@@ -275,6 +255,34 @@ export default function MeetTheExperts() {
                 </p>
               </div>
             </div>
+          </div>
+        </motion.div>
+
+        {/* Ranjith Kumar */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={reveal}
+          transition={{ duration: 0.65, ease: "easeOut" }}
+          className="mt-8 rounded-2xl border border-white/[0.08] bg-[#0A1219]/80 p-6 sm:mt-10 sm:p-8 lg:p-10"
+        >
+          <div className="max-w-4xl">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-[#11C5C9] sm:text-xs">
+              Ranjith Kumar Addagatla
+            </p>
+
+            <h3 className="mt-2 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+              Building a trusted dental experience
+            </h3>
+
+            <p className="mt-4 text-sm leading-7 text-[#A4B2BD] sm:text-base sm:leading-8">
+              Ranjith Kumar Addagatla brings a strong focus on thoughtful
+              management, patient experience, and the continued growth of the
+              clinic. His approach is centered on maintaining a trusted,
+              professional environment where patients feel comfortable,
+              respected, and well cared for.
+            </p>
           </div>
         </motion.div>
 
@@ -318,7 +326,6 @@ export default function MeetTheExperts() {
                   }}
                   className="group relative flex min-h-[190px] flex-col overflow-hidden rounded-2xl border border-white/[0.08] bg-[#0A1219]/80 p-5 transition-colors duration-300 hover:border-[#11C5C9]/35 hover:bg-[#0C1820] sm:min-h-[210px] sm:p-6 lg:p-7"
                 >
-                  {/* Hover glow */}
                   <div
                     aria-hidden="true"
                     className="pointer-events-none absolute -right-12 -top-12 h-28 w-28 rounded-full bg-[#11C5C9]/[0.06] blur-3xl transition-all duration-500 group-hover:bg-[#11C5C9]/[0.16]"
@@ -361,15 +368,10 @@ export default function MeetTheExperts() {
         </div>
 
         {/* Closing statement */}
-        <div className="mt-12 flex flex-col gap-3 border-t border-white/[0.08] pt-6 sm:mt-16 sm:flex-row sm:items-center sm:justify-between sm:pt-8">
-          <p className="text-xs leading-6 text-[#8496A3] sm:text-sm">
+        <div className="mt-12 border-t border-white/[0.08] pt-6 sm:mt-16 sm:pt-8">
+          <p className="text-center text-xs leading-6 text-[#8496A3] sm:text-sm">
             Thoughtful expertise. Modern dentistry. Care centered on you.
           </p>
-
-          <div className="flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.2em] text-[#11C5C9]">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#11C5C9]" />
-            A better standard of care
-          </div>
         </div>
       </div>
     </section>
