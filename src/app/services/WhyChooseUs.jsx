@@ -105,7 +105,7 @@ lg:grid-cols-[1.1fr_0.9fr]
               {/* No fixed aspect-ratio + no object-cover => nothing gets cropped.
                   Set width/height below to your real image size (e.g. 1200x900). */}
               <Image
-                src="/gallery/doctor2.jpg"
+                src="/gallery/doctor2.JPG"
                 alt="Experienced dental specialists providing advanced dental treatments and personalized oral care"
                 width={1200}
                 height={900}

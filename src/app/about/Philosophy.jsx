@@ -108,7 +108,7 @@ lg:items-center
   "
 >
   <Image
-    src="/gallery/treatment.jpg"
+    src="/gallery/treatment.JPG"
     alt="Dental Philosophy"
     fill
     className="

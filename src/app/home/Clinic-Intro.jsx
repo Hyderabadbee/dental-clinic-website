@@ -52,7 +52,7 @@ export default function ClinicIntroduction() {
           >
             <div className="overflow-hidd rounded-[28px] border border-[#43DDE140]">
               <Image
-                src="/gallery/equipment2.jpg"
+                src="/gallery/equipment2.JPG"
                 alt="Dental Clinic"
                 width={800}
                 height={900}

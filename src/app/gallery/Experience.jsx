@@ -76,7 +76,7 @@ md:grid-cols-[1.02fr_1fr] lg:grid-cols-[1.05fr_1fr]
 
             <div className="relative overflow-hidden rounded-2xl">
               <Image
-                src="/gallery/doctor2.jpg"
+                src="/gallery/doctor2.JPG"
                 alt=""
                 width={700}
                 height={900}
@@ -103,7 +103,7 @@ md:grid-cols-[1.02fr_1fr]
 "
 >              <div className="relative overflow-hidden rounded-2xl">
                 <Image
-                  src="/gallery/treatment2.jpg"
+                  src="/gallery/treatment2.JPG"
                   alt=""
                   width={700}
                   height={500}
@@ -119,7 +119,7 @@ md:grid-cols-[1.02fr_1fr]
 
               <div className="relative overflow-hidden rounded-2xl">
                 <Image
-                  src="/hands.jpg"
+                  src="/hands.JPG"
                   alt=""
                   width={700}
                   height={500}

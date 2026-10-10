@@ -17,48 +17,48 @@ const galleryItems = [
   {
     id: 1,
     category: "Clinic",
-    image: "/gallery/building.jpg",
+    image: "/gallery/building.JPG",
   },
   
   {
     id: 2,
     category: "Clinic",
-    image:"/gallery/hall.jpg",
+    image:"/gallery/hall.JPG",
   },
 {
     id: 3,
     category: "Clinic",
-    image: "/gallery/desk2.jpg",
+    image: "/gallery/desk2.JPG",
   },
   {
     id: 4,
     category: "Clinic",
-    image: "/gallery/room.jpg",
+    image: "/gallery/room.JPG",
   },
   {
     id: 5,
     category: "Treatments",
-    image: "/gallery/treatment.jpg",
+    image: "/gallery/treatment.JPG",
   },
   {
     id: 6,
     category: "Treatments",
-    image: "/gallery/equipment.jpg",
+    image: "/gallery/equipment.JPG",
   },
   // {
   //   id: 7,
   //   category: "Treatments",
-  //   image: "/gallery/equipment2.jpg",
+  //   image: "/gallery/equipment2.JPG",
   // },
   {
   id: 8,
   category: "Treatments",
-  image: "/gallery/equipment3.jpg",
+  image: "/gallery/equipment3.JPG",
   },
 {
     id: 9,
     category: "Treatments",
-  image: "/gallery/equipment4.jpg",
+  image: "/gallery/equipment4.JPG",
   },
 
   // {
@@ -77,11 +77,11 @@ const galleryItems = [
   //   category: "Patient Moments",
   //   image: "/gallery/c1.svg",
   // },
-  {
-    id: 10,
-    category: "Patient Moments",
-    image: "/gallery/c2.svg",
-  },
+  // {
+  //   id: 10,
+  //   category: "Patient Moments",
+  //   image: "/gallery/c2.svg",
+  // },
 
   {
     id: 11,
@@ -91,17 +91,17 @@ const galleryItems = [
   {
     id: 12,
     category: "Team",
-    image: "/gallery/team1.jpg",
+    image: "/gallery/team1.JPG",
   },
    {
     id: 13,
     category: "Team",
-    image: "/gallery/team2.jpg",
+    image: "/gallery/team2.JPG",
   },
   {
     id: 14,
     category: "Team",
-    image: "/gallery/team.jpg",
+    image: "/gallery/team.JPG",
    }
   
 ];
